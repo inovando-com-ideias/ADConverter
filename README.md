@@ -105,6 +105,18 @@ class Potenciometro : public ADConverter {
 - [`examples/basic/basic.ino`](examples/basic/basic.ino) — leitura simples
 - [`examples/com_tensao/com_tensao.ino`](examples/com_tensao/com_tensao.ino) — leitura com barra visual
 
+## Status de testes
+
+| Plataforma       | Status                 | Versão testada | Observação                          |
+|------------------|----------------------- |----------------|-------------------------------------|
+| Arduino UNO      | ✅ Testado e validado | v0.3            | —                                   |
+| Arduino Mega     | ⏳ Pendente           | —               | —                                   |
+| Arduino Leonardo | ⏳ Pendente           | —               | —                                   |
+| ESP8266 NodeMCU  | ⏳ Pendente           | —               | —                                   |
+| ESP32            | ⏳ Pendente           | —               | —                                   |
+| RP2040           | ⏳ Pendente           | —               | —                                   |
+| STM32            | ⛔ Não testado        | —               | Problemas com driver DFU no Windows |
+
 ## Licença
 
 MIT — Flavio Guimarães — [Inovando com Ideias](https://youtube.com/@inovandocomideias)
