@@ -166,6 +166,7 @@ void ADConverter::_aplicarVrefAVR(float v_ref) {
 // -----------------------------------------------------------------------
 // Aplica v_ref no ESP32 via atenuação
 // -----------------------------------------------------------------------
+#if defined(ARDUINO_ARCH_ESP32)
 void ADConverter::_aplicarVrefESP32(float v_ref) {
 
     if      (v_ref == 1.0f)  analogSetPinAttenuation(_pino, ADC_0db);
@@ -173,6 +174,7 @@ void ADConverter::_aplicarVrefESP32(float v_ref) {
     else if (v_ref == 2.0f)  analogSetPinAttenuation(_pino, ADC_6db);
     else if (v_ref == 3.3f)  analogSetPinAttenuation(_pino, ADC_11db);
 }
+#endif
 
 // -----------------------------------------------------------------------
 // Leituras
